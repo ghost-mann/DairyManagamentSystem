@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="DairyManagamentSystem.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <h2 id="title">DAIRY FARM MANAGEMENT SYSTEM</h2>
+            <br />
+            <img src="Images/maincow.jpg" id="image"/>
+            
+        </div>
+        <div id="navbar">
+            
+            
+            <asp:HyperLink ID="employees" runat="server" href="http://localhost:50775/addEmployees.aspx" BorderColor="Black" BorderWidth="15px">EMPLOYEES</asp:HyperLink>
+            <asp:HyperLink ID="livestock" runat="server" href="#" BorderColor="Black" BorderWidth="15px">LIVESTOCK</asp:HyperLink>
+            <asp:HyperLink ID="sales" runat="server" href="#" BorderColor="Black" BorderWidth="15px">SALES</asp:HyperLink>
+            
+        </div>
+
+        <br />
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">All Rights Reserved &reg; 2023</div>
+    </form>
+</body>
+</html>
